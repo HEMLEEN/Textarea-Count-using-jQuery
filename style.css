@@ -1,0 +1,28 @@
+label{
+  padding: 4px;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 110%;
+    z-index: 10000;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loader-container.active {
+    display: none;
+  }
+  
+  .loader-container img {
+    height: 7rem;
+    color: var(--cyan);
+    text-transform: capitalize;
+  }
+
+  

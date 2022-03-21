@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea Character Count</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #0f0c29, #302163, #24243e);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        textarea {
+            height: 70px;
+            font-size: 15px;
+            width: 80%;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            resize: vertical;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        #result {
+            display: flex;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            background-color: #0f0c29;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .row{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        background-color: #0f0c29;
+        padding: 20px;
+        border:1px solid #ccc;
+        text-align: center;
+        flex: 1;
+    }
+    .col{
+        flex:1;
+        margin: 0 5px;
+    }
+    </style>
+
+    <script>
+
+    </script>
+</head>
+
+<body id="loading">
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+   
+    <div id="result">
+        <form>
+            <label>Maximum 250 characters</label>
+
+            <textarea class="text-input" maxlength="250" placeholder="Enter your text here..."></textarea>
+            <br> <span class="rchars">250</span> Character(s) Remaining
+           
+        </form>
+
+        <div class="row">
+            <div class="col">
+                <strong>Word Count</strong>
+                <span class="word-count" style="margin:0 20px">0</span>
+            </div>
+            <br>
+
+            <div class="col">
+                <strong>Letter Count</strong>
+                <span class="letter-count" style="margin:0 20px">0</span>
+            </div>
+            <br>
+            <div class="col">
+                <strong>No of Spaces</strong>
+                <span class="space-count" style="margin:0 20px">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script src="script.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+</body>
+
+<!-- loader image starts begin  -->
+<div class="loader-container" style="margin: 0 4px;">
+    <img src="img/loader-count.gif" style="width:auto; height: auto; ">
+</div>
+
+</html>
